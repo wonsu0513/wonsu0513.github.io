@@ -3,12 +3,11 @@ layout: about
 title: About
 permalink: /
 subtitle: Dr. Wonse Jo, Postdoctoral Researcher, <a href="https://mavric.si.umich.edu/" target="_blank">MAVRIC Lab</a>, <a href="https://umich.edu/" target="_blank">University of Michigan</a>, Ann Arbor, MI USA.
-
 profile:
   align: right
-  image_mouseover: ws_mouseon.jpg
-  image_mouseout: ws_mouseoff.jpg
-  image_banner: ws_banner.jpg
+  image_mouseover: \assets\img\ws_mouseon.jpg
+  image_mouseout: \assets\img\ws_mouseoff.jpg
+  image_banner: \assets\img\ws_banner.jpg
   address: 
     <p>Postdoctoral Researcher</p>
     <p>Affective Robotics</p>

@@ -10,7 +10,22 @@ layout: default
           </h1>
           <p class="desc">{{ page.subtitle }}</p>
         </header>
-
+        <header class="post-header">
+          <h2 class="post-title">
+            <center><b><i>Make the Impossible Possible with Technology</i></b></center>
+          </h2>
+          
+          {% if page.profile.image_banner %} 
+            <img class="img-fluid" align="right" src="{{ page.profile.image_banner | prepend: '/assets/img/' | relative_url }}">
+          {% endif %}  
+          
+          <!--  -->
+          <p class="desc" align="right">{{ page.description }}</p>
+        
+        </header>
+      
+        <hr>
+        
         <article>
           {% if page.profile -%}
           <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
