@@ -1,20 +1,11 @@
 ---
 layout: page
-<<<<<<<< HEAD:_projects/Paltform_development.markdown
 title: Opensource Platforms
 description: Developing opensource multi-robot platforms
 img: /assets/img/7.jpg
 redirect: https://unsplash.com
 importance: 1 
 category: Individual Researchs
-========
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
-importance: 1
-category: work
-related_publications: einstein1956investigations, einstein1950meaning
->>>>>>>> 5a96b75479fbb562823b59ee9821d999233faac1:_projects/1_project.md
 ---
 
 Every project has a beautiful feature showcase page.
