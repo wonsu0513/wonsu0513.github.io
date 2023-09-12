@@ -17,7 +17,7 @@ footer_text: >
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: assets\img\ws_head.png  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: ws_head.png  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://wonsu0513.github.io # the base hostname & protocol for your site
 #baseurl: /blog  # the subpath of your site, e.g. /blog/
@@ -26,6 +26,7 @@ impressum_path:  # set to path to include impressum link in the footer, use the 
 
 ######## Personal Data/file.
 #For CV page
+image_banner: ws_banner.jpg
 cv_pdf_name: Wonse_Jo_Curriculum_Vitae.pdf 
 personal_icon: ws_head.ico 
 # -----------------------------------------------------------------------------

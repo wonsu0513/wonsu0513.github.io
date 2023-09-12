@@ -5,7 +5,7 @@ permalink: /
 subtitle: Dr. Wonse Jo, Postdoctoral Researcher, <a href="https://mavric.si.umich.edu/" target="_blank">MAVRIC Lab</a>, <a href="https://umich.edu/" target="_blank">University of Michigan</a>, Ann Arbor, MI USA.
 profile:
   align: right
-  image: ws_mouseon.jpg
+  image: ws_mouseoff.jpg
   image_circular: false # crops the image to make it circular
   address: >
     <p>Postdoctoral Researcher</p>
