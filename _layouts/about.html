@@ -16,9 +16,7 @@ layout: default
             <center><b><i>Make the Impossible Possible with Technology</i></b></center>
           </h2>
           
-          {% if page.profile.image_banner %} 
-            <img class="img-fluid" align="right" src="{{ page.profile.image_banner | prepend: '/assets/img/' | relative_url }}">
-          {% endif %}  
+          <img class="img-fluid" align="right" src="{{ page.profile.image_banner | prepend: '/assets/img/' | relative_url }}">
           
           <!--  -->
           <p class="desc" align="right">{{ page.description }}</p>
