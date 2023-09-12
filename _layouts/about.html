@@ -31,22 +31,14 @@ layout: default
         <article>
           {% if page.profile -%}
           <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
-          {% if page.profile.image_mouseover %}  
-            {% if page.profile.image_mouseout %}        
-              <img class="img-fluid z-depth-1 rounded" src="{{ page.profile.image_mouseout | prepend: '/assets/img/' | relative_url }}"  
-                onmouseover="this.src='{{ page.profile.image_mouseover | prepend: '/assets/img/' | relative_url }}'" 
-                onmouseout="this.src='{{ page.profile.image_mouseout | prepend: '/assets/img/' | relative_url }}'">
-            {% else %}
-              <img class="img-fluid z-depth-1 rounded" src="{{ page.profile.image_mouseon | prepend: '/assets/img/' | relative_url }}">
-            {% endif %}  
-            {% if page.profile.address %}
-                <div class="address">
-                  {{ page.profile.address }}
-                </div>
+            {%- if page.profile.image %}
+              {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
+
+              {% if page.profile.image_circular %}
+                {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
+              {% else %}
+                {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
               {% endif %}
-            </div>
-              
-            {% endif %}
 
               {% include figure.html
               path=profile_image_path
