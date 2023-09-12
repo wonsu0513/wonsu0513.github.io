@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://wonsu0513.github.io/blog/sitemap.xml
+Sitemap: https://wonsu0513.github.io/sitemap.xml
