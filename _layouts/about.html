@@ -11,92 +11,92 @@ layout: default
           <p class="desc">{{ page.subtitle }}</p>
         </header>
 
-        <header class="post-header">
-          <h2 class="post-title">
-            <center><b><i>Make the Impossible Possible with Technology</i></b></center>
-          </h2>
-          
-          {% if page.profile.image_banner %} 
-            <img class="img-fluid" align="right" src="{{ page.profile.image_banner | prepend: '/assets/img/' | relative_url }}">
-          {% endif %}  
-          
-          <!--  -->
-          <p class="desc" align="right">{{ page.description }}</p>
-        
-        </header>
-      
-        <hr>>
-      
+  <header class="post-header">
+    <h2 class="post-title">
+      <center><b><i>Make the Impossible Possible with Technology</i></b></center>
+    </h2>
+    
+    {% if page.profile.image_banner %} 
+      <img class="img-fluid" align="right" src="{{ page.profile.image_banner | prepend: '/assets/img/' | relative_url }}">
+    {% endif %}  
+    
+    <!--  -->
+    <p class="desc" align="right">{{ page.description }}</p>
+  
+  </header>
 
-        <article>
-          {% if page.profile %}
-          <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-            {% if page.profile.image_mouseover %}  
-              {% if page.profile.image_mouseout %}        
-                <img class="img-fluid z-depth-1 rounded" src="{{ page.profile.image_mouseout | prepend: '/assets/img/' | relative_url }}"  
-                  onmouseover="this.src='{{ page.profile.image_mouseover | prepend: '/assets/img/' | relative_url }}'" 
-                  onmouseout="this.src='{{ page.profile.image_mouseout | prepend: '/assets/img/' | relative_url }}'">
-              {% else %}
-                <img class="img-fluid z-depth-1 rounded" src="{{ page.profile.image_mouseon | prepend: '/assets/img/' | relative_url }}">
-              {% endif %}  
-            {% endif %}
-            {% if page.profile.address %}
-              <div class="address">
-                {{ page.profile.address }}
-              </div>
-            {% endif %}
+  <hr>
+ 
+
+  <article>
+    {% if page.profile %}
+    <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+      {% if page.profile.image_mouseover %}  
+        {% if page.profile.image_mouseout %}        
+          <img class="img-fluid z-depth-1 rounded" src="{{ page.profile.image_mouseout | prepend: '/assets/img/' | relative_url }}"  
+            onmouseover="this.src='{{ page.profile.image_mouseover | prepend: '/assets/img/' | relative_url }}'" 
+            onmouseout="this.src='{{ page.profile.image_mouseout | prepend: '/assets/img/' | relative_url }}'">
+        {% else %}
+          <img class="img-fluid z-depth-1 rounded" src="{{ page.profile.image_mouseon | prepend: '/assets/img/' | relative_url }}">
+        {% endif %}  
+      {% endif %}
+      {% if page.profile.address %}
+        <div class="address">
+          {{ page.profile.address }}
+        </div>
+      {% endif %}
+    </div>
+    {% endif %}
+
+              {% include figure.html
+              path=profile_image_path
+              class=profile_image_class
+              alt=page.profile.image
+              cache_bust=true -%}
+            {% endif -%}
+            {%- if page.profile.address %}
+            <div class="address">
+              {{ page.profile.address }}
+            </div>
+            {%- endif %}
           </div>
-          {% endif %}
-      
-                    {% include figure.html
-                    path=profile_image_path
-                    class=profile_image_class
-                    alt=page.profile.image
-                    cache_bust=true -%}
-                  {% endif -%}
-                  {%- if page.profile.address %}
-                  <div class="address">
-                    {{ page.profile.address }}
-                  </div>
-                  {%- endif %}
-                </div>
-                {%- endif %}
-      
-                <div class="clearfix">
-                  {{ content }}
-                </div>
-      
-                <!-- News -->
-                {% if page.news and site.announcements.enabled -%}
-                  <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
-                  {%- include news.html limit=true %}
-                {%- endif %}
-      
-                <!-- Latest posts -->
-                {% if page.latest_posts -%}
-                  <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">latest posts</a></h2>
-                  {%- include latest_posts.html %}
-                {%- endif %}
-      
-                <!-- Selected papers -->
-                {% if page.selected_papers -%}
-                  <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>
-                  {%- include selected_papers.html %}
-                {%- endif %}
-      
-                <!-- Social -->
-                {%- if page.social %}
-                  <div class="social">
-                    <div class="contact-icons">
-                      {% include social.html %}
-                    </div>
-      
-                    <div class="contact-note">
-                      {{ site.contact_note }}
-                    </div>
-      
-                  </div>
-                {%- endif %}
-              </article>
-      
-      </div>
+          {%- endif %}
+
+          <div class="clearfix">
+            {{ content }}
+          </div>
+
+          <!-- News -->
+          {% if page.news and site.announcements.enabled -%}
+            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
+            {%- include news.html limit=true %}
+          {%- endif %}
+
+          <!-- Latest posts -->
+          {% if page.latest_posts -%}
+            <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">latest posts</a></h2>
+            {%- include latest_posts.html %}
+          {%- endif %}
+
+          <!-- Selected papers -->
+          {% if page.selected_papers -%}
+            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>
+            {%- include selected_papers.html %}
+          {%- endif %}
+
+          <!-- Social -->
+          {%- if page.social %}
+            <div class="social">
+              <div class="contact-icons">
+                {% include social.html %}
+              </div>
+
+              <div class="contact-note">
+                {{ site.contact_note }}
+              </div>
+
+            </div>
+          {%- endif %}
+        </article>
+
+</div>
