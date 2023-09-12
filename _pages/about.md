@@ -6,9 +6,9 @@ subtitle: Dr. Wonse Jo, Postdoctoral Researcher, <a href="https://mavric.si.umic
 
 profile:
   align: right
-  image_mouseover: assets\img\ws_mouseon.jpg
-  image_mouseout: assets\img\ws_mouseoff.jpg
-  image_banner: assets\img\ws_banner.jpg
+  image_mouseover: ws_mouseon.jpg
+  image_mouseout: ws_mouseoff.jpg
+  image_banner: ws_banner.jpg
   address: 
     <p>Postdoctoral Researcher</p>
     <p>Affective Robotics</p>
@@ -16,8 +16,8 @@ profile:
     <p> Ann Arbor, MI USA</p>
 
 news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
+latest_posts: false  # includes a list of the newest posts
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
