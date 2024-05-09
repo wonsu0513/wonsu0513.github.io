@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I have started a new job position at University of Michigan, as a postdoctoral researcher.
+:sparkles:I have started a new job position at University of Michigan, as a postdoctoral researcher.
